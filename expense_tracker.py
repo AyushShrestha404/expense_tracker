@@ -15,7 +15,7 @@ def add_transaction(transactions, categories, budget):
             print(" Amount must be positive.\n")
             return
         if amount > get_remaining_budget(transactions, budget):
-            print("⚠️ Not enough budget left for this transaction.\n")
+            print(" Not enough budget left for this transaction.\n")
             return
     except ValueError:
         print(" Invalid amount.\n")
